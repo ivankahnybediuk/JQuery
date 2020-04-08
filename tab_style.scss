@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@mixin bold-font {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+};
+@mixin regular-font{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+};
+.container-fluid{
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+};
+.window{
+    margin: 145px auto 175px auto;
+    &_first_row{
+        &_container{
+                background-color: rgb(38, 40, 54);
+                position: absolute;
+                width: 600px;
+                height: 115px;
+                display: flex;
+                justify-content: space-around;
+                align-items: stretch;;
+                padding: 0;
+                .btn{
+                    @include regular-font;
+                    color: #8d91a3;
+                    font-size: 16px;
+                    margin: 0;
+                    padding: 0;
+                    &:hover{
+                        color: white;
+                        border-bottom: white 2px solid;
+
+                    }
+                    &_active{
+                        color: white;
+                        border-bottom: white 2px solid;
+                    }
+                    .icon{
+                        margin-top: 35px;
+                        &_svg{
+                            fill: #8d91a3;
+                            &:hover{
+                                fill: white;
+        
+                            }
+                            &_active{
+                                fill: white;
+                            }
+                        }
+                    }
+                };
+              };     
+        };
+    &_second_row_1{
+            background-color: rgb(48, 50, 66);
+            box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+            height: 420px;  
+            display: flex; 
+            width: 600px; 
+            margin-top: 115px;
+            &_container_1{
+                width: 30%;
+                padding-top: 55px;
+                padding-right: 35px;
+                padding-bottom: 90px;
+                padding-left: 45px; 
+                &_img{
+                    margin-bottom: 25px;
+                    margin-right: 10%;
+                    margin-left: 10%;
+                }
+                &_stars{
+                    width: 100%;
+                    text-align: center;
+                    color: #ffdd3f;
+                }
+            }
+            &_container_2{
+                position: relative;
+                h1{
+                    @include regular-font;
+                    font-size: 32px;
+                    color: white;
+                    margin-top: 70px;
+                    margin-bottom: 15px;
+                }
+                h2{
+                    @include regular-font;
+                    font-size: 14px;
+                    color: white;
+                    line-height: 1.429;
+                    text-align: left;
+                      }
+                &_img{
+                    position: absolute;
+                    top:60px;
+                    right: 40px;
+                }
+                &_rate{
+                    position: absolute;
+                    top:80px;
+                    right: 62px;
+                    @include regular-font;
+                    color: white;
+                    font-size: 20px;
+                }
+                &_article{
+                    @include regular-font;
+                        font-size: 14px;
+                        color: white;
+                        line-height: 1.571;
+                        margin-bottom: 70px;
+                        margin-top: 40px;
+                      }
+                &_offer{
+                    @include bold-font;
+                    font-size: 14px;
+                    color:#ffdd3f;
+                    }
+                &_price{
+                    position: absolute;
+                    top:360px;
+                    text-align: left;
+                    @include regular-font;
+                        font-size: 32px;
+                        color: white;
+                        line-height: 0.625;      
+                }    
+                &_buyIt{
+                    position: absolute;
+                    top:330px;
+                    right: 45px;
+                    @include bold-font;
+                    font-size: 20px;
+                    color: white;
+                    border-radius: 2px;
+                    background-color: #13e28d;
+                    width: 165px;
+                    height: 55px; 
+                    text-align: center;  
+                    padding-top: 17px;    
+                    padding-bottom: 17px;
+                    &:hover{
+                        background-color: #0afd98; 
+                        box-shadow: rgb(206, 235, 149) 2px 2px 2px;
+                        font-size: 21px;
+                    }
+                    &:active{
+                        background-color: #83f7c7; 
+                        box-shadow: rgb(148, 158, 129) 2px 2px ; 
+                    }
+                }    
+                }      
+                } 
+    &_second_row_2{
+        background-color: rgb(48, 50, 66);
+        box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+        height: 541px; 
+        display: none;
+        width: 600px; 
+        margin-top: 115px;
+        color: white;
+        @include bold-font;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    } 
+    &_second_row_3{
+        background-color: rgb(48, 50, 66);
+        box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+        height: 541px; 
+        display: none;
+        width: 600px; 
+        margin-top: 115px;
+        color: rgb(185, 117, 117);
+        @include bold-font;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }   
+}
